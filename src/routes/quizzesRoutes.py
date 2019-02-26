@@ -42,7 +42,7 @@ def getQuiz(quizId):
             break
 
     # nyari soalnya
-    questionsFile = open('./question-file.json')
+    questionsFile = open(questionsFileLocation)
     questionsData = json.load(questionsFile)
 
     for question in questionsData["questions"]:
